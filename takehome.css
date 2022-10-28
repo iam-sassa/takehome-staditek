@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Sans&family=Noto+Sans+Javanese&family=PT+Serif&family=Yrsa:wght@300&display=swap');
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right, #b1b2ff, #aac4ff, #D2DAFF);
+    color: #151657;
+     font-family: 'Josefin Sans', sans-serif;
+  }
+  .container {
+    padding: 40px;
+    width: 400px;
+    margin: 100px auto;
+    border:2px black solid;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #c3cfe9, #e8ecfd);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li * {
+    float: left;
+  }
+  li, h3 {
+    clear:both;
+    list-style:none;
+  }
+  input, button {
+    outline: none;
+  }
+  button {
+    background: #5051ad;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+     font-family: 'Josefin Sans', sans-serif;
+    cursor: pointer;
+  }
+  button:hover {
+    color: #151657;
+  }
+  /* Heading */
+  h3,
+  label[for='new-task'] {
+    color: #151657;
+    font-weight: 700;
+    font-size: 15px;
+    border-bottom: 2px solid #151657;
+    padding: 30px 0 10px;
+    margin: 0;
+    text-transform: capitalize;
+  }
+  input[type="text"] {
+    margin: 0;
+    font-size: 18px;
+    line-height: 35px;
+    height: 35px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 6px;
+     font-family: 'Josefin Sans', sans-serif;
+    color: #888;
+  }
+  input[type="text"]:focus {
+    color: #151657;
+  }
+  
+
+  label[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+  }
+  input#new-task {
+    float: left;
+    width: 318px;
+  }
+  p > button:hover {
+    color: #151657;
+    background-color: transparent;
+  }
+  
+  /* Task list */
+  li {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #4b4c86;
+  }
+  li > input[type="checkbox"] {
+    margin: 0 10px;
+    position: relative;
+    top: 15px;
+  }
+  li > label {
+    font-size: 18px;
+    line-height: 40px;
+    width: 237px;
+    padding: 0 0 0 11px;
+  }
+  li >  input[type="text"] {
+    width: 226px;
+  }
+  li > .delete:hover {
+    color: #CF2323;
+  }
+  
+  /* Completed */
+  #completed-tasks label {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+
+  ul li input[type=text] {
+    display:none;
+  }
+  
+  ul li.editMode input[type=text] {
+    display:block;
+  }
+  
+  ul li.editMode label {
+    display:none;
+  }
