@@ -88,5 +88,3 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
 	
 		bindTaskEvents(completedTasksHolder.children[i],taskIncomplete);
 	}
-
-    alert('maaf kak yang kemarin salah file');
